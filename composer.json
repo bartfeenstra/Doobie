@@ -1,0 +1,17 @@
+{
+    "name": "bartfeenstra/doobie",
+    "description": "Doobie (do-by) allows @todo annotations to be extended with metadata to specify by which event the described action must have been taken.",
+    "license": "GPL-2.0",
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BartFeenstra\\Doobie\\": "src",
+            "BartFeenstra\\Doobie\\Tests\\": "tests/src"
+        }
+    }
+}

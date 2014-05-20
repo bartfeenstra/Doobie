@@ -1,7 +1,7 @@
 # Doobie
 
-[![Build Status](https://travis-ci.org/bartfeenstra/Doobie.png?branch=master)](https://travis-ci.org/sdboyer/gliph)
-[![Coverage Status](https://coveralls.io/repos/bartfeenstra/Doobie/badge.png?branch=master)](https://coveralls.io/r/sdboyer/gliph?branch=master)
+[![Build Status](https://travis-ci.org/bartfeenstra/Doobie.png?branch=master)](https://travis-ci.org/bartfeenstra/Dobie)
+[![Coverage Status](https://coveralls.io/repos/bartfeenstra/Doobie/badge.png?branch=master)](https://coveralls.io/r/bartfeenstra/Doobie?branch=master)
 
 Doobie (*"do by"*) allows `@todo` annotations to be extended with metadata to specify
 by which event the described action must have been taken.

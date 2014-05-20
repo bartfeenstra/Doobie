@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bartfeenstra/Doobie.png?branch=master)](https://travis-ci.org/bartfeenstra/Dobie)
 [![Coverage Status](https://coveralls.io/repos/bartfeenstra/Doobie/badge.png?branch=master)](https://coveralls.io/r/bartfeenstra/Doobie?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/bartfeenstra/Doobie/v/stable.png)](https://packagist.org/packages/bartfeenstra/Doobie)
 
 Doobie (*"do by"*) allows `@todo` annotations to be extended with metadata to specify
 by which event the described action must have been taken.

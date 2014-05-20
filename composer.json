@@ -1,7 +1,15 @@
 {
     "name": "bartfeenstra/doobie",
-    "description": "Doobie (do-by) allows @todo annotations to be extended with metadata to specify by which event the described action must have been taken.",
-    "license": "GPL-2.0",
+    "description": "Doobie (\"do by\") allows PHP @todo annotations to be extended with metadata to specify by which event the described action must have been taken.",
+    "license": "MIT",
+    "homepage": "http://github.com/bartfeenstra/Doobie",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bart Feenstra",
+            "email": "bart@mynameisbart.com"
+        }
+    ],
     "require": {
         "php": ">=5.4"
     },

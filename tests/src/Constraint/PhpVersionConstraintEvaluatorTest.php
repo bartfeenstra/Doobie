@@ -54,7 +54,7 @@ class PhpVersionConstraintEvaluatorTest extends \PHPUnit_Framework_TestCase {
       ->will($this->returnValue('5.4.3'));
     $constraint_1->expects($this->atLeastOnce())
       ->method('setStatus')
-      ->with(TRUE);
+      ->with(FALSE);
 
     $constraint_2 = $this->getMock('\BartFeenstra\Doobie\Constraint\ConstraintInterface');
     $constraint_2->expects($this->any())
@@ -62,7 +62,7 @@ class PhpVersionConstraintEvaluatorTest extends \PHPUnit_Framework_TestCase {
       ->will($this->returnValue('>5.4.3'));
     $constraint_2->expects($this->atLeastOnce())
       ->method('setStatus')
-      ->with(FALSE);
+      ->with(TRUE);
 
     /** @var \PHPUnit_Framework_MockObject_MockObject[] $constraints */
     $constraints = array($constraint_1, $constraint_2);

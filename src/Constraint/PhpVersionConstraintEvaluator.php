@@ -37,13 +37,16 @@ class PhpVersionConstraintEvaluator {
     /** @var \BartFeenstra\Doobie\Constraint\ConstraintInterface[] $constraints */
     foreach ($constraints as $constraint) {
       $operator = '==';
+      $expected_value = $constraint->getExpectedValue();
       foreach ($this->availableOperators as $available_operator) {
-        if (preg_match('#^' . $available_operator . '\d#', $constraint->getExpectedValue())) {
+        if (preg_match('#^' . $available_operator . '\d#', $expected_value)) {
+          // Extract the operator from the expected value.
           $operator = $available_operator;
+          $expected_value = substr($expected_value, strlen($operator));
           break;
         }
       }
-      $constraint->setStatus(version_compare($constraint->getExpectedValue(), $this->phpVersion, $operator));
+      $constraint->setStatus(!version_compare($this->phpVersion, $expected_value, $operator));
       $constraint->setActualValue($this->phpVersion);
     }
   }
